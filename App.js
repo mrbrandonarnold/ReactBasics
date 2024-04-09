@@ -3,8 +3,15 @@ import { StyleSheet, Text, View, Button } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>1</Text>
-      <Text>2</Text>
+      {/* Code Comment */}
+
+      {/* Inline Styles */}
+      <Text style={{margin: 16, borderWidth: 1, borderColor: '#ff0000', padding: 16}}>First piece of text</Text>
+      
+      {/* Styles Object */}
+      <Text style={styles.dummyText}>Second piece of text</Text>
+      
+      {/* Button Component */}
       <Button title='Tap me!' />
     </View>
     
@@ -18,4 +25,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  dummyText: {
+    margin: 16, 
+    borderWidth: 1, 
+    borderColor: 'blue', 
+    padding: 16
+  }
 });
